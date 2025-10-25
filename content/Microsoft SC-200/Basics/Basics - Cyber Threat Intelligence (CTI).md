@@ -7,10 +7,10 @@
 ---
 # IOC's and IOA's
 
-1. IOC (Indicator of Compromise)
+1. **IOC (Indicator of Compromise)**
 	- It is evidence on a system that indicates that the security of the network has been breached
 	- eg = File Hashes, Domains, URLs
-2. IOA (Indicators of attack) 
+2. **IOA (Indicators of attack)** 
 	- focus on detecting the intent of what an attacker is trying to accomplish and its behavior
 	- eg = Intent & Behavior
 ---
