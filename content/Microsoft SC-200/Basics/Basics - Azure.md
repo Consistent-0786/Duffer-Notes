@@ -36,8 +36,6 @@ This hierarchy helps organize, manage access, and apply policies efficiently acr
 	- Tenant is like a Default / main directory
 	- Each tenant has its own users, groups, applications, and policies
 	- Tenants are **isolated** from each other, so data and identities are separate and secure
-==Entra ID Tenants identities uses **Azure resources** like virtual machines, networks, app services, databases, etc==
 
-***In Simple***
-In Entra ID Tenant, we have our identities like user , admin , etc and those identities actually access the **Azure resources** that reside in our subscriptions and resource
- 
+- ***In Simple***
+	- In Entra ID Tenant, we have our identities like user , admin , etc and those identities actually access the **Azure resources** that reside in our subscriptions and resource
