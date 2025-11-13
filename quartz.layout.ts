@@ -1,63 +1,37 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// Shared layout components
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [Component.GraphToggle()], // Graph toggle button added globally
+  afterBody: [Component.Graph()],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      Discord: "https://discord.gg/cRFFHYye7t",
     },
   }),
 }
 
-// Layout for single note pages
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
-    Component.ConditionalRender({
-      component: Component.Breadcrumbs(),
-      condition: (page) => page.fileData.slug !== "index",
-    }),
+    Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
   ],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Search(), grow: true },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
-      ],
-    }),
+    Component.Search(),
+    Component.Darkmode(),
+    Component.ReaderMode(),
     Component.Explorer(),
   ],
-  right: [
-    Component.DesktopOnly(Component.TocToggle()), // collapsible ToC
-    Component.Backlinks(),
-  ],
+  right: [Component.TableOfContents(), Component.Backlinks()],
 }
 
-// Layout for list pages (folders/tags)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
-  left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
-      components: [
-        { Component: Component.Search(), grow: true },
-        { Component: Component.Darkmode() },
-      ],
-    }),
-    Component.Explorer(),
-  ],
-  right: [
-    Component.DesktopOnly(Component.TocToggle()), // ToC toggle visible here too
-  ],
+  left: [Component.PageTitle(), Component.Search(), Component.Darkmode(), Component.Explorer()],
+  right: [Component.TableOfContents()],
 }

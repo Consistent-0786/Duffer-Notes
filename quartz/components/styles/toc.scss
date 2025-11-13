@@ -1,102 +1,26 @@
-/* === Modern ToC Sidebar (Left Slide Panel) === */
+.toc-wrapper {
+  margin-top: 1rem;
+}
 
-.toc-container-outer {
-  position: relative;
-  width: 100%;
+.toc.collapsed {
+  display: none;
 }
 
 .toc-toggle {
-  position: fixed;
-  top: 100px;
-  left: 10px;
-  background: var(--background-alt);
-  border: 1px solid var(--outline);
-  color: var(--text);
-  font-size: 1.2rem;
-  border-radius: 6px;
-  padding: 0.4rem 0.6rem;
-  cursor: pointer;
-  z-index: 1000;
-  transition: background 0.3s ease;
-}
-
-.toc-toggle:hover {
   background: var(--secondary);
-  color: var(--light);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.toc-section {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 360px;
-  max-width: 90vw;
-  background: var(--background);
-  border-right: 1px solid var(--outline);
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  transform: translateX(0);
-  transition: transform 0.4s ease-in-out;
-  z-index: 999;
-  padding: 1rem 1.5rem;
-}
-
-.toc-section.collapsed {
-  transform: translateX(-100%);
-}
-
-.toc-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.toc-list {
+.toc ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-left: 0;
 }
 
-.toc-list li {
-  margin: 0.3rem 0;
-}
-
-.toc-list a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.95rem;
-  display: block;
-  transition: color 0.2s ease;
-}
-
-.toc-list a:hover {
-  color: var(--accent);
-}
-
-.depth-1 {
-  margin-left: 0rem;
-}
-.depth-2 {
-  margin-left: 1rem;
-}
-.depth-3 {
-  margin-left: 2rem;
-}
-
-/* For responsive mode */
-@media (max-width: 600px) {
-  .toc-toggle {
-    top: 80px;
-    left: 8px;
-    font-size: 1rem;
-  }
-
-  .toc-section {
-    width: 85%;
-  }
+.toc a.in-view {
+  color: var(--tertiary);
+  font-weight: bold;
 }
