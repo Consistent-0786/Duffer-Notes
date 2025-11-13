@@ -1,0 +1,73 @@
+.toc-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+  background: var(--lightgray);
+  border: 1px solid var(--gray);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toc-toggle:hover {
+  background: var(--gray);
+  color: white;
+}
+
+.toc-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  background: var(--light);
+  border-left: 1px solid var(--gray);
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  z-index: 1999;
+  padding: 1rem;
+}
+
+.toc-sidebar.collapsed {
+  transform: translateX(100%);
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 1rem;
+}
+
+.toc-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.toc-content ul,
+.toc-content li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin: 0.25rem 0;
+}
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.toc-list a:hover {
+  text-decoration: underline;
+}

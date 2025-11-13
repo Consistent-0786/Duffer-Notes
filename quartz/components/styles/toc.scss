@@ -1,66 +1,102 @@
-@use "../../styles/variables.scss" as *;
+/* === Modern ToC Sidebar (Left Slide Panel) === */
 
-.toc {
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  min-height: 1.4rem;
-  flex: 0 0.5 auto;
-  &:has(button.toc-header.collapsed) {
-    flex: 0 1 1.4rem;
-  }
+.toc-container-outer {
+  position: relative;
+  width: 100%;
 }
 
-button.toc-header {
-  background-color: transparent;
-  border: none;
-  text-align: left;
+.toc-toggle {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  background: var(--background-alt);
+  border: 1px solid var(--outline);
+  color: var(--text);
+  font-size: 1.2rem;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
-  padding: 0;
-  color: var(--dark);
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.toc-toggle:hover {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+.toc-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 360px;
+  max-width: 90vw;
+  background: var(--background);
+  border-right: 1px solid var(--outline);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: 999;
+  padding: 1rem 1.5rem;
+}
+
+.toc-section.collapsed {
+  transform: translateX(-100%);
+}
+
+.toc-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
   display: flex;
   align-items: center;
-
-  & h3 {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 0;
-  }
-
-  & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
-  }
-
-  &.collapsed .fold {
-    transform: rotateZ(-90deg);
-  }
+  justify-content: space-between;
 }
 
-ul.toc-content.overflow {
+.toc-list {
   list-style: none;
-  position: relative;
-  margin: 0.5rem 0;
   padding: 0;
-  max-height: calc(100% - 2rem);
-  overscroll-behavior: contain;
-  list-style: none;
+  margin: 0;
+}
 
-  & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
-    &.in-view {
-      opacity: 0.75;
-    }
+.toc-list li {
+  margin: 0.3rem 0;
+}
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.toc-list a:hover {
+  color: var(--accent);
+}
+
+.depth-1 {
+  margin-left: 0rem;
+}
+.depth-2 {
+  margin-left: 1rem;
+}
+.depth-3 {
+  margin-left: 2rem;
+}
+
+/* For responsive mode */
+@media (max-width: 600px) {
+  .toc-toggle {
+    top: 80px;
+    left: 8px;
+    font-size: 1rem;
   }
 
-  @for $i from 0 through 6 {
-    & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
-    }
+  .toc-section {
+    width: 85%;
   }
 }
