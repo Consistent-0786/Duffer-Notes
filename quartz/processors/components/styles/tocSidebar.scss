@@ -1,0 +1,48 @@
+.toc {
+  margin: 1rem 0;
+}
+
+.toc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.toc-header:hover {
+  background-color: #f1f3f5;
+}
+
+.toc-content {
+  border-left: 2px solid #e0e0e0;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.toc-content.collapsed {
+  display: none;
+}
+
+.toc a {
+  display: block;
+  color: #0366d6;
+  text-decoration: none;
+  margin: 0.25rem 0;
+  transition: color 0.2s;
+}
+
+.toc a:hover {
+  color: #023e8a;
+}
+
+.toc a.in-view {
+  font-weight: 700;
+  color: #1d4ed8;
+}

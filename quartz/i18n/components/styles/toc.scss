@@ -1,0 +1,44 @@
+
+.toc-container-outer {
+  margin-top: 1rem;
+}
+
+/* Make the ToC act like a sidebar with its own scroll */
+.toc-section {
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+  padding: 0.5rem;
+  border-left: 1px solid var(--outline);
+}
+
+/* Optional: custom thin scrollbar */
+.toc-section::-webkit-scrollbar {
+  width: 8px;
+}
+.toc-section::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 4px;
+}
+.toc-section::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc-title {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-list li {
+  margin: 4px 0;
+}
+
+.toc-list a.in-view {
+  font-weight: bold;
+  color: var(--secondary);
+}
