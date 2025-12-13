@@ -1,15 +1,14 @@
-/* Quartz TOC sidebar - always visible on right */
+/* Quartz TOC sidebar */
 .quartz-toc-sidebar {
   position: sticky;
   top: 1rem;
-  align-self: start;
   width: 320px;
   max-width: 28vw;
   padding-left: 1rem;
   flex: 0 0 320px;
 }
 
-/* Scroll container */
+/* Container */
 .toc-section {
   max-height: calc(100vh - 120px);
   overflow-y: auto;
@@ -17,31 +16,39 @@
   border-left: 1px solid var(--outline);
 }
 
-/* ON THIS PAGE title */
+/* Title */
 .toc-title {
-  margin: 0 0 0.75rem 0;
+  margin-bottom: 0.75rem;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: var(--gray-10);
   text-transform: uppercase;
+  color: var(--gray-10);
 }
 
 /* Root list */
-.toc-list {
+.toc-list,
+.toc-list ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/* Base list item */
-.toc-list li {
-  position: relative;
-  margin: 6px 0;
   padding-left: 0.75rem;
+  position: relative;
 }
 
-/* Links */
+/* Vertical guide line for each level */
+.toc-list ul {
+  border-left: 1px solid var(--outline);
+  margin-left: 0.5rem;
+}
+
+/* List item */
+.toc-list li {
+  margin: 6px 0;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+/* Link */
 .toc-list a {
   text-decoration: none;
   color: var(--gray-11);
@@ -51,75 +58,24 @@
   line-height: 1.4;
 }
 
-/* Active heading */
+/* Active section */
 .toc-list a.in-view {
   color: var(--secondary);
   font-weight: 600;
   background: var(--highlight);
 }
 
-/* ---------------------------------
-   MULTI-COLUMN VERTICAL GUIDE LINES
-   --------------------------------- */
-
-/*
- Each depth adds another background
- linear-gradient column.
-*/
-
-.toc-list li.depth-0 {
-  padding-left: 0.75rem;
-}
-
-.toc-list li.depth-1 {
-  padding-left: 1.25rem;
-  background:
-    linear-gradient(var(--outline), var(--outline)) 0.35rem 0 / 1px 100% no-repeat;
-}
-
-.toc-list li.depth-2 {
-  padding-left: 1.75rem;
-  background:
-    linear-gradient(var(--outline), var(--outline)) 0.35rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 0.95rem 0 / 1px 100% no-repeat;
-}
-
-.toc-list li.depth-3 {
-  padding-left: 2.25rem;
-  background:
-    linear-gradient(var(--outline), var(--outline)) 0.35rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 0.95rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 1.55rem 0 / 1px 100% no-repeat;
-}
-
-.toc-list li.depth-4 {
-  padding-left: 2.75rem;
-  background:
-    linear-gradient(var(--outline), var(--outline)) 0.35rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 0.95rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 1.55rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 2.15rem 0 / 1px 100% no-repeat;
-}
-
-.toc-list li.depth-5 {
-  padding-left: 3.25rem;
-  background:
-    linear-gradient(var(--outline), var(--outline)) 0.35rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 0.95rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 1.55rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 2.15rem 0 / 1px 100% no-repeat,
-    linear-gradient(var(--outline), var(--outline)) 2.75rem 0 / 1px 100% no-repeat;
-}
-
-/* Reduce noise for deeper levels */
-.toc-list li.depth-3 a,
-.toc-list li.depth-4 a,
-.toc-list li.depth-5 a {
-  font-size: 0.85rem;
+/* Smaller text for deeper levels */
+.toc-list ul ul a {
+  font-size: 0.9rem;
   color: var(--gray-10);
 }
 
-/* Thin scrollbar */
+.toc-list ul ul ul a {
+  font-size: 0.85rem;
+}
+
+/* Scrollbar */
 .toc-section::-webkit-scrollbar {
   width: 8px;
 }

@@ -18,14 +18,13 @@ const defaultOptions: Options = {
   collapseByDefault: false,
 }
 
-export interface TocNode {
+interface TocEntry {
   depth: number
   text: string
   slug: string
-  children: TocNode[]
 }
 
-const slugger = new Slugger()
+const slugAnchor = new Slugger()
 
 export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
@@ -36,47 +35,27 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
       return [
         () => {
           return async (tree: Root, file) => {
-            const enabled = file.data.frontmatter?.enableToc ?? opts.showByDefault
-            if (!enabled) return
+            const display = file.data.frontmatter?.enableToc ?? opts.showByDefault
+            if (!display) return
 
-            slugger.reset()
-
-            const flat: TocNode[] = []
+            slugAnchor.reset()
+            const toc: TocEntry[] = []
 
             visit(tree, "heading", (node) => {
               if (node.depth <= opts.maxDepth) {
                 const text = toString(node)
-                flat.push({
+                toc.push({
                   depth: node.depth,
                   text,
-                  slug: slugger.slug(text),
-                  children: [],
+                  slug: slugAnchor.slug(text),
                 })
               }
             })
 
-            if (flat.length < opts.minEntries) return
-
-            // Build nested tree
-            const root: TocNode[] = []
-            const stack: TocNode[] = []
-
-            for (const item of flat) {
-              while (stack.length && stack[stack.length - 1].depth >= item.depth) {
-                stack.pop()
-              }
-
-              if (stack.length === 0) {
-                root.push(item)
-              } else {
-                stack[stack.length - 1].children.push(item)
-              }
-
-              stack.push(item)
+            if (toc.length >= opts.minEntries) {
+              file.data.toc = toc
+              file.data.collapseToc = opts.collapseByDefault
             }
-
-            file.data.toc = root
-            file.data.collapseToc = opts.collapseByDefault
           }
         },
       ]
@@ -86,7 +65,7 @@ export const TableOfContents: QuartzTransformerPlugin<Partial<Options>> = (userO
 
 declare module "vfile" {
   interface DataMap {
-    toc: TocNode[]
+    toc: TocEntry[]
     collapseToc: boolean
   }
 }
