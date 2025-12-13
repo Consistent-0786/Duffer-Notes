@@ -1,0 +1,49 @@
+/* Quartz TOC sidebar - always visible on right */
+.quartz-toc-sidebar {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  width: 320px;
+  max-width: 28vw;
+  padding-left: 1rem;
+  flex: 0 0 320px;
+}
+
+.toc-section {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding: 0.5rem 0.75rem;
+  border-left: 1px solid var(--outline);
+}
+
+.toc-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-list li { margin: 6px 0; }
+
+.toc-list a {
+  text-decoration: none;
+  color: var(--dark);
+  display: block;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.toc-list a.in-view {
+  color: var(--secondary);
+  font-weight: 600;
+  background: var(--highlight);
+}
+
+/* thin scrollbar */
+.toc-section::-webkit-scrollbar { width: 8px; }
+.toc-section::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 6px; }
