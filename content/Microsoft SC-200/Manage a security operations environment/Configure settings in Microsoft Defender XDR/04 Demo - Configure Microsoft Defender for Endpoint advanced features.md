@@ -1,0 +1,4 @@
+- Go to [Defender XDR](secuity.microsoft.com)	  
+- Go to `Settings`
+- Click on `Endpoints`
+- Access the features
