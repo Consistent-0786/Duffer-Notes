@@ -1,6 +1,6 @@
 # Configure Unified RBAC 
 
-- Go to [Defender XDR](secuity.microsoft.com)
+- Go to [Defender XDR](https://secuity.microsoft.com)
 - Go to `System -> Permissions` 
 - Click on `Create custom roles`
 - Enter the `Role Name` : eg = Test , Admin
