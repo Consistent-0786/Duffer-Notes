@@ -29,8 +29,7 @@
 > Start: 18-01-2026 | 14:50
 > End: Pending
 - [ ] Manage assets and environments
-	- [x] Mitigate risk by using Exposure Management (XSPM) in Microsoft Defender XDR
-	- [ ] Discover unprotected resources by using Defender for Cloud
+
 
 ## Microsoft Course
 
