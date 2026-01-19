@@ -130,8 +130,116 @@
 
 # Demo : Asset Inventory
 
-- To Access Asset Inventory 
-<div style="max-width: 100%; width: 800px; margin: 0 auto;"> <div style="display: none;"> <p style="display: none; text-align: center; margin-top: 10px;"> <i style="font-style: italic; font-weight: bold; color: #CCCCCC; font-size: 18px;">7 STEPS</i> </p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 1. The first step is to open <b style="font-weight:normal;color:#FF00D6">Home - Microsoft Azure</b> and click <b style="font-weight:normal;color:#FF00D6">Microsoft Azure</b> </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=1&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 2. Click <b style="font-weight:normal;color:#FF00D6">Microsoft Defender for Cloud</b> </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=2&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 3. Click <b style="font-weight:normal;color:#FF00D6">Inventory</b> </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=3&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 4. Inventory page </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=4&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 5. Click <b style="font-weight:normal;color:#FF00D6">laws-sentinal</b> </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=5&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 6. We can see Resource Health, Recommendations, Alerts of our workspace </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=6&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> <p style='font-size: 15px; line-height: 136%; margin-top: 59px; margin-bottom: 51px;'> 7. That's it. You're done. </p> <p style="text-align: center;"><img src="https://www.iorad.com/api/tutorial/stepScreenshot?tutorial_id=2670533&step_number=7&width=800&height=600&mobile_width=450&mobile_height=400&apply_resize=true&min_zoom=0.5" style="max-width: 100%;max-height: 100%;border: none;" alt="" /></p> </div> </div> <h3 style="display: none; font-size: 18px; margin-top: 89px; margin-bottom: 15px;"> Here's an interactive tutorial </h3> <p style="display: none;"> <a href="https://www.iorad.com/player/2670533/Portal-Azure---How-to-access-Asset-Inventory-in-Microsoft-Defender-for-Cloud">https://www.iorad.com/player/2670533/Portal-Azure---How-to-access-Asset-Inventory-in-Microsoft-Defender-for-Cloud</a> </p> <p class="skiptranslate" style="border: 0; min-width: 100%; margin-bottom: 0; height: 501px;"><iframe src="https://www.iorad.com/player/2670533/Portal-Azure---How-to-access-Asset-Inventory-in-Microsoft-Defender-for-Cloud?src=iframe&oembed=1" width="100%" height="500px" style="width: 100%; height: 500px; " referrerpolicy="strict-origin-when-cross-origin" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" allow="camera; microphone; clipboard-write;" sandbox="allow-scripts allow-forms allow-same-origin allow-presentation allow-downloads allow-modals allow-popups allow-popups-to-escape-sandbox allow-top-navigation allow-top-navigation-by-user-activation"></iframe></p> <div style="display: none;font-size: 18px; text-align: center;font-family: 'Libre Franklin', sans-serif;"> <br><br> <b style="font-weight: bold; color: #CCCCCC;"> Next step </b> <br><br> <div style="display: inline-block;"> <div style="display: table-row;"> <a style="display: table-cell;" href="http://ior.ad/live/bcJ7" target="_blank"> <img src="https://www.iorad.com/golive.svg" style="border: none;" alt="Go Live" /> </a> </div> </div> </div>
+- To access **Asset Inventory**
+- Go to [Azure Portal](https://portal.azure.com)
+- Click on **Microsoft Defender for Cloud -> Inventory**
+
+![[Pasted image 20260119210913.png]]
+
+---
+
+# Defender for Cloud : Security Recommendations
+
+- Defender for Cloud checks your resources in **Azure, AWS, and GCP** against built-in **security best practices**
+- If something is missing or misconfigured, it gives you **security recommendations**
+- These recommendations are **enforced and managed using Azure Policy** to help keep resources secure
+
+## Demo : Security Recommendations
+
+- To access **Security Recommendations**
+- Go to [Azure Portal](https://portal.azure.com)
+- Click on **Microsoft Defender for Cloud -> Recommendations**
+- Click on **Switch to classic view**
+
+![[Pasted image 20260119212323.png]]
+
+- Click on **All recommendations**
+
+![[Pasted image 20260119212953.png]]
+
+---
+
+# Defender for Cloud – Secure Score Recommendations
+
+- The entire purpose of Secure Score is to provide a number from 0 to 100 and this number tells us our various resources security score
+- Secure score recommendations show **specific actions** you can take to **improve your security posture**
+- Each recommendation adds points to your **Secure Score**, helping you track and prioritize security improvements
+
+## Demo : Secure Score Recommendations
+
+- Follow the Steps from  ==**Demo : Security Recommendations**== till "Click on **Switch to classic view** tab"
+- Click on **Secure Score Recommendations**
+
+![[Pasted image 20260119214216.png]]
+
+---
+
+# Defender for Cloud : Remediation
+
+Security recommendations should be **fixed regularly**.  
+Defender for Cloud explains **how to remediate** them and often provides a **Quick Fix** option.
+
+⚠️ **Be careful using Quick Fix if :**
+- If you manage resources with **Infrastructure as Code (IaC)**
+- If you don’t fully understand the **workload**, 
+
+- As **Automatic fixes** can **impact or break services**
+
+## Demo : Remediation
+
+### For Manual Remediation
+
+- Follow the Steps from  ==**Demo : Security Recommendations**== till "Click on **Switch to classic view** tab"
+- Click on **All recommendations**
+
+![[Pasted image 20260119220124.png]]
+- Click on **Name: "Microsoft Defender for App Service should be enabled"**
+- It will open a **Remediation window**
+
+![[Pasted image 20260119220610.png]]
+
+### For Automatic Remediation
+
+- Follow the Steps from  ==**Demo : Security Recommendations**== till "Click on **Switch to classic view** tab"
+- Click on **All recommendations**
+![[Pasted image 20260119221203.png]]
+
+-  Click on **Name: "Machines should be configured ..."**
+- It will open a **Remediation window**
+
+![[Pasted image 20260119221633.png]]
+
+---
+
+# Defender for Cloud: DevOps Security
+
+## DevOps Security
+
+- **[DevOps Security](https://share.google/aimode/ip46siQRO8dvjw12s)** means **keeping applications safe while they are being built and run**
+- We **check for security problems early**, while writing and deploying code, not **after** the application is already running
+
+## DevOps Security life-cycle in Azure
+
+- A **developer** writes code in **Azure DevOps** and uses **Azure Pipelines** to deploy it to  
+    **ACR (Azure Container Registry)** and run it in **AKS (Azure Kubernetes Service)**
+
+- **Defender for CSPM (Cloud Security Posture Management)** scans :
+	- **Azure DevOps** and pipelines 
+	- **IaC (Infrastructure as Code)** for misconfigurations
+	- **Source code** for vulnerabilities (**CVEs – Common Vulnerabilities and Exposures**), outdated libraries, and hard-coded secrets 
+	- **Container images** stored in ACR
+
+- **Defender for Containers**:
+	- Scans **container images**    
+	- Monitors **AKS (Azure Kubernetes Service) workloads at runtime** for threats    
+	- **Logs** from Defender and Azure services are sent to **Log Analytics**    
+
+- **Microsoft Sentinel (SIEM – Security Information and Event Management)** uses these logs to give the **SOC (Security Operations Center)** full visibility
+    
+- **Result:** Security is built into the entire pipeline :
+	- **code → containers → runtime → monitoring**
+
+![[Pasted image 20260119223343.png]]
 
 ---
 
