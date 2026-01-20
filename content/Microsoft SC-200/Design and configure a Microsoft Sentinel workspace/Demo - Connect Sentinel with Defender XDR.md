@@ -51,7 +51,7 @@ This guide outlines the process of enabling and configuring Microsoft Defender X
 ![[Pasted image 20260120215035.png]]
 
 
-### Manage the Microsoft Defender XDR Solution
+### Click on Install and Manage the Microsoft Defender XDR Solution
 ![[Pasted image 20260120215039.png]]
 
 
@@ -119,22 +119,7 @@ This guide outlines the process of enabling and configuring Microsoft Defender X
 
 **Tab Name:** Microsoft Defender XDR - Microsoft Azure
 
-### Enable Microsoft Defender for Office 365 Data
-![[Pasted image 20260120215140.png]]
-
-
-### Enable Microsoft Defender for Cloud Apps Data
-![[Pasted image 20260120215144.png]]
-
-
-### Enable Microsoft Defender Alerts Data
-![[Pasted image 20260120215147.png]]
-
-
-### Apply Configuration Changes
-![[Pasted image 20260120215150.png]]
-
-
+## Enable all excepts Microsoft Defender for Identity
 ### Verify Successful Update
 ![[Pasted image 20260120215154.png]]
 
