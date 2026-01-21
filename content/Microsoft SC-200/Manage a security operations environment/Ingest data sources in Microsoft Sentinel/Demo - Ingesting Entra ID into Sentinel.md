@@ -1,0 +1,60 @@
+# Ingesting Entra ID into Sentinel
+
+**Start url:** [https://security.microsoft.com/homepage?tid=d03d0415-c1c9-4b94-80ad-4bc2a3b7ca98](https://security.microsoft.com/homepage?tid=d03d0415-c1c9-4b94-80ad-4bc2a3b7ca98)
+
+**Tab Name:** Home - Microsoft Defender
+
+### Click on the link "Microsoft Defender"
+![[Pasted image 20260121181829.png]]
+
+
+### Click on the button "Microsoft Sentinel "
+![[Pasted image 20260121181834.png]]
+
+
+### Click on the button "Content management "
+![[Pasted image 20260121181838.png]]
+
+
+### Click on the link "Content hub"
+![[Pasted image 20260121181841.png]]
+
+
+**Tab Name:** Content hub - Microsoft Defender
+
+### Click on the button "Microsoft Entra ID FEATURED"
+![[Pasted image 20260121181844.png]]
+
+
+### Click on the button "Install"
+![[Pasted image 20260121181848.png]]
+
+
+**Tab Name:** Home - Microsoft Defender
+
+### Click on the button "Configuration "
+![[Pasted image 20260121181851.png]]
+
+
+### Click on the link "Data connectors"
+![[Pasted image 20260121181900.png]]
+
+
+**Tab Name:** Data Connectors - Microsoft Defender
+
+### Click on "Microsoft Entra ID"
+![[Pasted image 20260121181855.png]]
+
+
+### Click on the button "Open connector page"
+![[Pasted image 20260121181909.png]]
+
+
+**Tab Name:** Data Connector Page - Microsoft Defender
+
+### Click on "Audit Logs"
+![[Pasted image 20260121181912.png]]
+
+
+### Click on the button "Apply Changes"
+![[Pasted image 20260121181915.png]]
