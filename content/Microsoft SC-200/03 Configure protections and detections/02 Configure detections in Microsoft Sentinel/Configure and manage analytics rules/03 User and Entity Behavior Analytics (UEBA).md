@@ -41,5 +41,7 @@
 - ![[Pasted image 20260123193906.png]]
 - ![[Pasted image 20260123193922.png]]
 
+> To create **UEBA Demo :** [[03.1 Demo - UEBA]]
+
 ---
 
