@@ -1,0 +1,3 @@
+- Workbooks are used to visualize data in eg= dashboards
+- IOC's of templates are pre-built by Microsoft
+- Can be customized with KQL
