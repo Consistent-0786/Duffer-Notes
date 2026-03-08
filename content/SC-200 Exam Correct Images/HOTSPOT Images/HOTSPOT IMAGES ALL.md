@@ -161,3 +161,91 @@
 
 ---
 
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/106503-exam-sc-200-topic-2-question-39-discussion/)	=> AI Chnage Ans Confirm
+	Set the LA1 trigger to: When a Defender for Cloud Recommendation is created or triggered
+	Trigger the execution of LA1 from:Recommendations
+
+![[Pasted image 20260308181939.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/139572-exam-sc-200-topic-4-question-3-discussion/)	=> AI Chnage Ans Confirm
+	N, N, N
+
+![[Pasted image 20260308182136.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/141606-exam-sc-200-topic-4-question-6-discussion/)	=> AI Chnage Ans Confirm
+	VM1 = 	An Azure virtual machine extension
+	Server1 = The Azure Monitor Agent and an Azure virtual machine extension
+
+![[Pasted image 20260308182343.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/157067-exam-sc-200-topic-4-question-23-discussion/)	=> AI Chnage Ans Confirm
+	N, Y, N
+
+![[Pasted image 20260308182524.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/316466-exam-sc-200-topic-4-question-33-discussion/)	=> Self Correct with Comments
+	VM extension only 
+	Azure Connection Manager and VM Extension
+
+![[Pasted image 20260308182721.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/151103-exam-sc-200-topic-5-question-18-discussion/) 	=> Based on Comments
+	N, N, Y
+
+![[Pasted image 20260308182903.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/151117-exam-sc-200-topic-6-question-23-discussion/)	=> Comments Based
+	Y, N ,N
+
+![[Pasted image 20260308183033.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/302446-exam-sc-200-topic-6-question-28-discussion/)	=> AI | Comments Based
+	Y, N, Y
+
+![[Pasted image 20260308183210.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/302532-exam-sc-200-topic-6-question-33-discussion/)	=> AI | Comments Based
+	Role: Microsoft Sentinel Automation Contributor
+	Scope: RG2
+
+![[Pasted image 20260308183702.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/302368-exam-sc-200-topic-6-question-37-discussion/)	=> Self | Comments
+	Y, N, Y
+
+![[Pasted image 20260308183842.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/315251-exam-sc-200-topic-7-question-39-discussion/)	=> AI | Comments Based
+	inner, SHA256
+
+![[Pasted image 20260308184040.png]]
+
+---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/315522-exam-sc-200-topic-7-question-40-discussion/)	=> Comments Based
+	Data source: Logs (Analytics)
+	Resource type: Microsoft Sentinel
+
+![[Pasted image 20260308184222.png]]
+
+---
