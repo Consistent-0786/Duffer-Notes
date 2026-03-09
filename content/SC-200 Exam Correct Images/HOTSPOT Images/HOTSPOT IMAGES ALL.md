@@ -249,3 +249,8 @@
 ![[Pasted image 20260308184222.png]]
 
 ---
+
+- [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/169882-exam-sc-200-topic-7-question-18-discussion/)
+
+![[Pasted image 20260309190311.png]]
+
