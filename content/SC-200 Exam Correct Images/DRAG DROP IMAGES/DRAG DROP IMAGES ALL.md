@@ -121,6 +121,6 @@ From Workbooks, select Microsoft Entra ID Audit logs and then select View Templa
 
 From Workbooks, select Microsoft Entra ID Audit logs and then select Save
 
-![[Pasted image 20260311165932.png]]
+![[Pasted image 20260311195925.png]]
 
 ---
