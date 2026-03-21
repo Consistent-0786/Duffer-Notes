@@ -229,9 +229,10 @@
 ---
 
 - [View on ExamTopics](https://www.examtopics.com/discussions/microsoft/view/302368-exam-sc-200-topic-6-question-37-discussion/)	=> Self | Comments
-	Y, N, Y
+	N, N, Y
 
-![[Pasted image 20260308183842.png]]
+![[Pasted image 20260321131934.png]]
+
 
 ---
 
