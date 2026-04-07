@@ -22,6 +22,7 @@
 
 **SOC Workflow: Detect → Investigate → Respond**
 
+```text
 ├── **Detect (Spot suspicious activity)**
 │   ├── SecurityAlert (MDE) [T1059, T1071, T1086, T1486]
 │   ├── SigninLogs (Entra ID) [T1078, T1110]
@@ -47,6 +48,7 @@
     ├── Block malicious IPs
     └── Trigger automated playbooks (SOAR)
 
+```
 ---
 # ✅ How to Read This Tree :
 
