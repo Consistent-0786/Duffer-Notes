@@ -1,5 +1,10 @@
 # SOC Analyst KQL Table Reference + MITRE ATT&CK Mapping
 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDOlf3cXzMBxoUQ3meHwwTpMXj-1s23IH19xdZGZ6awO9WYq89bKiU9Ce7sCTjJ-_Vauf1V1Hxo0yj/pubhtml?widget=true&amp;headers=false"></iframe>
+
+
+
+
 | Source / Data Connector                   | Table Name                     | Purpose / Description                                                           | Key Columns (Examples)                                          | Common SOC Use Case                                      | MITRE ATT&CK Mapping       |
 | ----------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------------------------- | -------------------------- |
 | **Microsoft Defender for Endpoint (MDE)** | `SecurityAlert`                | Aggregated alerts from MDE, combining suspicious events into actionable alerts. | `AlertName`, `Severity`, `DeviceName`, `Timestamp`, `Status`    | Triage incidents, detect malware/ransomware alerts       | T1059, T1071, T1486, T1086 |
