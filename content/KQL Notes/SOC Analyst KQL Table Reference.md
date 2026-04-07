@@ -23,9 +23,6 @@
 |                                           | `AppServiceHTTPLogs`           | HTTP request logs for App Services.                                             | `HttpStatus`, `RequestUri`, `ClientIp`                          | Detect web attacks, suspicious HTTP requests             | T1190, T1071               |
 |                                           | `NetworkSecurityGroupEvent`    | NSG flow logs capturing network traffic flow data.                              | `SourceIP`, `DestinationIP`, `Action`                           | Analyze allowed/denied traffic for anomalies             | T1040, T1041               |
 |                                           | `AzureFirewallLogs`            | Logs from Azure Firewall actions.                                               | `RuleName`, `SourceIP`, `DestinationIP`, `Action`               | Detect blocked or allowed suspicious traffic             | T1040, T1041               |
-<button onclick="window.print()" style="margin-bottom: 20px; padding: 8px 16px; background-color: #2b2b2b; color: white; border: none; border-radius: 4px; cursor: pointer;">
-  🖨️ Save Page as PDF
-</button>
 
 ---
 
@@ -62,9 +59,5 @@
     ├── AppServiceHTTPLogs (T1190, T1071)
     └── NetworkSecurityGroup / AzureFirewallLogs (T1040, T1041)
 ```
-
-<button onclick="window.print()" style="margin-bottom: 20px; padding: 8px 16px; background-color: #2b2b2b; color: white; border: none; border-radius: 4px; cursor: pointer;">
-  🖨️ Save Page as PDF
-</button>
 
 ---
