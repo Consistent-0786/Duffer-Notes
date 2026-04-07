@@ -1,21 +1,28 @@
-# SOC Workflow Deep-Dive Table (Microsoft Accordingly)
+# SOC Workflow Deep-Dive Action Table 
 
-- ==This Table covers **Detect → Investigate → Respond**, includes **specific tables**, **columns to check**, **MITRE ATT&CK mapping**, and **SOC analyst actions**==
-- ==This will be a **practical reference for analysts**==
+- This Table covers ==**Detect → Investigate → Respond**==, includes **specific tables**, **columns to check**, **MITRE ATT&CK mapping**, and **SOC analyst actions**
 
-|Stage|Action / Purpose|Relevant Tables (KQL)|Key Columns to Check|MITRE ATT&CK Mapping|SOC Analyst Action / Example|
-|---|---|---|---|---|---|
-|**Detect**|Spot anomalies or suspicious activity|`SecurityAlert` (MDE)|`AlertName`, `Severity`, `DeviceName`, `Timestamp`|T1059, T1071, T1086, T1486|Identify high-severity malware or ransomware alerts|
-|||`SigninLogs` (Entra ID)|`UserPrincipalName`, `ResultType`, `IPAddresses`|T1078, T1110|Detect impossible travel or brute-force login attempts|
-|||`AzureActivity` (Mgmt Plane)|`OperationName`, `Caller`, `ResourceId`|T1078, T1087, T1484|Detect unexpected resource deletion, creation, or role changes|
-|||`DeviceNetworkEvents` (MDE)|`RemoteIP`, `RemoteUrl`, `Protocol`|T1041, T1071|Detect unusual external connections / potential C2 communication|
-|**Investigate**|Analyze and trace root cause|`DeviceProcessEvents` (MDE)|`ProcessName`, `ProcessCommandLine`, `InitiatingProcessFileName`|T1059, T1086, T1204|Trace suspicious processes; identify malware execution path|
-|||`DeviceFileEvents` (MDE)|`FileName`, `FilePath`, `ActionType`|T1486, T1055|Find affected files or dropped malware|
-|||`DeviceRegistryEvents` (MDE)|`RegistryKey`, `RegistryValueName`, `ActionType`|T1547, T1112|Check persistence mechanisms (auto-start entries, config changes)|
-|||`DeviceImageLoadEvents` (MDE)|`FileName`, `DeviceName`, `InitiatingProcessFileName`|T1055|Detect DLL injections or suspicious binaries|
-|||`AuditLogs` / `ServicePrincipalSignInLogs` / `NonInteractiveUserSignInLogs` (Entra ID)|`ActivityDisplayName`, `TargetResources`, `ResultType`|T1078, T1550|Detect privilege escalation, unauthorized app/service logins|
-|||`AzureDiagnostics`, `KeyVaultLogs`, `StorageBlobLogs` (Azure Resource)|`OperationName`, `RequestStatus`, `ClientIP`|T1041, T1567, T1552, T1550|Trace which resources or secrets were accessed or modified|
-|**Respond**|Contain threat and remediate|Actions based on findings from all tables|N/A|N/A|Quarantine infected endpoints; disable compromised accounts; restore deleted Azure resources; block malicious IPs; trigger SOAR playbooks|
+- This will be a **practical reference for analysts**
+
+<div style="position: relative; width: 100%; height: 70vh;">
+
+  <!-- Full View Button -->
+  <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVb7B2Wxb2kIAiCRH6DAPy8Ti7l0GRcrb64VmWMCSdY9ax37cI6Ig0OdAFhhVzUcNwFfSBC-2X2K-f/pubhtml"
+     target="_blank"
+     style="position:absolute; top:10px; right:10px; z-index:10; 
+            padding:8px 12px; background:#4CAF50; color:white; 
+            text-decoration:none; border-radius:5px;">
+    ⛶ Full View
+  </a>
+
+  <!-- Iframe -->
+  <iframe 
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVb7B2Wxb2kIAiCRH6DAPy8Ti7l0GRcrb64VmWMCSdY9ax37cI6Ig0OdAFhhVzUcNwFfSBC-2X2K-f/pubhtml?widget=true&amp;headers=false"
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+
+</div>
+
 
 ---
 # SOC Workflow Tree
