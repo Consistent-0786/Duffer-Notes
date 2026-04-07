@@ -26,3 +26,36 @@
 
 ---
 
+# **SOC Analyst KQL Table Tree** :
+
+**SOC Analyst KQL Table Reference :**
+
+├── **Microsoft Defender for Endpoint (MDE)**
+│   ├── SecurityAlert ([T1059](https://attack.mitre.org/techniques/T1059/), [T1071](https://attack.mitre.org/techniques/T1071/), [T1086](https://attack.mitre.org/techniques/T1086/), [T1486](https://attack.mitre.org/techniques/T1486/))
+│   ├── DeviceProcessEvents ([T1059](https://attack.mitre.org/techniques/T1059/), [T1086](https://attack.mitre.org/techniques/T1086/), [T1204](https://attack.mitre.org/techniques/T1204/))
+│   ├── DeviceFileEvents ([T1486](https://attack.mitre.org/techniques/T1486/), [T1055](https://attack.mitre.org/techniques/T1055/))
+│   ├── DeviceNetworkEvents ([T1041](https://attack.mitre.org/techniques/T1041/), [T1071](https://attack.mitre.org/techniques/T1071/))
+│   ├── DeviceLogonEvents ([T1078](https://attack.mitre.org/techniques/T1078/), [T1021](https://attack.mitre.org/techniques/T1021/))
+│   ├── DeviceRegistryEvents ([T1547](https://attack.mitre.org/techniques/T1547/), [T1112](https://attack.mitre.org/techniques/T1112/))
+│   ├── DeviceImageLoadEvents ([T1055](https://attack.mitre.org/techniques/T1055/))
+│   └── DeviceEvents ([T1059](https://attack.mitre.org/techniques/T1059/), [T1043](https://attack.mitre.org/techniques/T1043/))
+│
+├── **Microsoft Entra ID (Azure AD)**
+│   ├── SigninLogs ([T1078](https://attack.mitre.org/techniques/T1078/), [T1110](https://attack.mitre.org/techniques/T1110/))
+│   ├── AuditLogs ([T1078](https://attack.mitre.org/techniques/T1078/), [T1098](https://attack.mitre.org/techniques/T1098/))
+│   ├── NonInteractiveUserSignInLogs ([T1078](https://attack.mitre.org/techniques/T1078/), [T1550](https://attack.mitre.org/techniques/T1550/))
+│   ├── ServicePrincipalSignInLogs ([T1078](https://attack.mitre.org/techniques/T1078/))
+│   └── ManagedIdentitySignInLogs ([T1078](https://attack.mitre.org/techniques/T1078/), [T1550](https://attack.mitre.org/techniques/T1550/))
+│
+├── **Azure Management Plane**
+│   └── AzureActivity ([T1078](https://attack.mitre.org/techniques/T1078/), [T1087](https://attack.mitre.org/techniques/T1087/), [T1484](https://attack.mitre.org/techniques/T1484/))
+│
+└── **Azure Resource Logs (Data Plane)**
+    ├── AzureDiagnostics ([T1070](https://attack.mitre.org/techniques/T1070/), [T1486](https://attack.mitre.org/techniques/T1486/))
+    ├── StorageBlobLogs ([T1041](https://attack.mitre.org/techniques/T1041/), [T1567](https://attack.mitre.org/techniques/T1567/))
+    ├── StorageFileLogs ([T1041](https://attack.mitre.org/techniques/T1041/), [T1567](https://attack.mitre.org/techniques/T1567/))
+    ├── KeyVaultLogs ([T1552](https://attack.mitre.org/techniques/T1552/), [T1550](https://attack.mitre.org/techniques/T1550/))
+    ├── AppServiceHTTPLogs ([T1190](https://attack.mitre.org/techniques/T1190/), [T1071](https://attack.mitre.org/techniques/T1071/))
+    └── NetworkSecurityGroup / AzureFirewallLogs ([T1040](https://attack.mitre.org/techniques/T1040/), [T1041](https://attack.mitre.org/techniques/T1041/))
+
+---
