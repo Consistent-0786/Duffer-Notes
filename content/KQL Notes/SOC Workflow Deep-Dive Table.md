@@ -19,3 +19,13 @@
 
 ---
 
+# ✅ How to Read This Tree :
+
+1. **Detect :** 
+	- Start with high-level alerts or anomalous activity
+2. **Investigate :** 
+	- Drill into **endpoint, identity, and Azure logs** to understand the full attack chain
+3. **Respond :** 
+	- Take **remediation actions** on endpoints, accounts, and cloud resources
+
+---
