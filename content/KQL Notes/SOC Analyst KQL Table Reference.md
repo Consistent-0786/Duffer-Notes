@@ -1,8 +1,41 @@
 # SOC Analyst KQL Table Reference + MITRE ATT&CK Mapping
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDOlf3cXzMBxoUQ3meHwwTpMXj-1s23IH19xdZGZ6awO9WYq89bKiU9Ce7sCTjJ-_Vauf1V1Hxo0yj/pubhtml?widget=true&amp;headers=false"></iframe>
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDOlf3cXzMBxoUQ3meHwwTpMXj-1s23IH19xdZGZ6awO9WYq89bKiU9Ce7sCTjJ-_Vauf1V1Hxo0yj/pubhtml" 
+   target="_blank"
+   style="display:inline-block; margin-bottom:10px; padding:8px 12px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;">
+   ⛶ Open Full View
+</a>
+<div style="position: relative; width: 100%; height: 70vh;">
 
+  <!-- Fullscreen Button -->
+  <button onclick="openFullscreen()" 
+    style="position:absolute; top:10px; right:10px; z-index:10; 
+           padding:8px 12px; background:#4CAF50; color:white; 
+           border:none; border-radius:5px; cursor:pointer;">
+    ⛶ Full View
+  </button>
 
+  <!-- Iframe -->
+  <iframe 
+    id="sheetFrame"
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSDOlf3cXzMBxoUQ3meHwwTpMXj-1s23IH19xdZGZ6awO9WYq89bKiU9Ce7sCTjJ-_Vauf1V1Hxo0yj/pubhtml?widget=true&headers=false"
+    style="width:100%; height:100%; border:none;">
+  </iframe>
+
+</div>
+<script>
+function openFullscreen() {
+  const iframe = document.getElementById("sheetFrame");
+
+  if (iframe.requestFullscreen) {
+    iframe.requestFullscreen();
+  } else if (iframe.webkitRequestFullscreen) {
+    iframe.webkitRequestFullscreen();
+  } else if (iframe.msRequestFullscreen) {
+    iframe.msRequestFullscreen();
+  }
+}
+</script>
 
 
 | Source / Data Connector                   | Table Name                     | Purpose / Description                                                           | Key Columns (Examples)                                          | Common SOC Use Case                                      | MITRE ATT&CK Mapping       |
