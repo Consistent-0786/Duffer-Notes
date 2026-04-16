@@ -13,7 +13,7 @@
 	  (open's in security portal)
 </a>
 
-![[defender-xdr.pdf#page=636]]
+![[defender-xdr.pdf#page=635]]
 
 ---
 
