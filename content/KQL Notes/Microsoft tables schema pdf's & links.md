@@ -13,7 +13,7 @@
 	  (open's in security portal)
 </a>
 
-![[01defender-xdr.pdf#page=635]]
+
 
 ---
 
@@ -31,6 +31,6 @@
   🔗 Microsoft Azure monitor Log analytics table schema (open's in azure portal)
 </a>
 
-![[01azure-azure-monitor-reference.pdf#page=1448]]
+
 
 ---
