@@ -20,7 +20,8 @@
 2. [ ] kql learn (kc7.cyber.labs)
 3. [ ] learn skool (mydfir-community)
 4. [ ] microsoft  sc-300 exam prepare (Expiration date if applicable: 18-Aug-2026)
-5. [ ] Anki (open ALL_ABOUT_YOU folder for MyDFIR interview questions)
-6. [ ] Apply to at least 5 Jobs per day (Don't forget to fill in the excel form for tracking)
+5. [ ] Anki (open ALL_ABOUT_YOU folder for MyDFIR interview questions) 
+6. [ ] Also learn interview questions (Firefox ->Tab Group->SOC BASIC INTERVIEW QUESTIONS)
+7. [ ] Apply to at least 5 Jobs per day (Don't forget to fill in the excel form for tracking)
 
 
