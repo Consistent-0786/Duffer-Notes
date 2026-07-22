@@ -17,7 +17,7 @@
 
 **New Plan:**
 1. [ ] Splunk learn (udemy course)
-2. [ ] kql learn (kc7.cyber.labs)
+2. [ ] kql learn (kc7.cyber.labs) | https://hunt.lognpacific.com
 3. [ ] learn skool (mydfir-community)
 4. [ ] microsoft  sc-300 exam prepare (Expiration date if applicable: 18-Aug-2026)
 5. [ ] Anki (open ALL_ABOUT_YOU folder for MyDFIR interview questions) 
