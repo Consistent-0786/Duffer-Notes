@@ -1,0 +1,1 @@
+![[37 - Configure external identity providers including protocols such as SAML.pdf]]

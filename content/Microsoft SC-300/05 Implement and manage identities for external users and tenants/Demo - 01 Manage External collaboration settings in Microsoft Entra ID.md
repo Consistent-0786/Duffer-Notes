@@ -1,0 +1,1 @@
+![[35 - Manage External collaboration settings in Microsoft Entra ID.pdf]]
