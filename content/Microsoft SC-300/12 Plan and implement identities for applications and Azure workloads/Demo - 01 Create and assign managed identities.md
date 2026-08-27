@@ -1,4 +1,5 @@
-<iframe src="https://drive.google.com/file/d/1mRSFMe54AfkCOrnbwNIgO09BQHfAJbAi/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe>
+<iframe src="https://drive.google.com/file/d/1mRSFMe54AfkCOrnbwNIgO09BQHfAJbAi/preview" width="640" height="480"></iframe>
+
 # Configure Azure Managed Identities for Resource-to-Resource Access
 
 ## Overview
